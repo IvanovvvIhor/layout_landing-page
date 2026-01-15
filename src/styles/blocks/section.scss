@@ -14,7 +14,7 @@
     color: $main-text-color;
     margin-bottom: 48px;
 
-    @include onTablet {
+    @include on-tablet {
       margin-bottom: 56px;
       font-size: 40px;
       line-height: 40px;

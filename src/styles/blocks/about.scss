@@ -5,11 +5,11 @@
   &__content {
     margin-top: 48px;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 56px;
     }
 
-    @include onDesctop {
+    @include on-desktop {
       margin-top: 56px;
     }
 
@@ -19,11 +19,11 @@
   &__title {
     grid-column: 1/ -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesctop {
+    @include on-desktop {
       grid-column: span 6;
     }
   }
@@ -37,11 +37,11 @@
     line-height: 140%;
     letter-spacing: 0;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesctop {
+    @include on-desktop {
       grid-column: span 6;
     }
   }

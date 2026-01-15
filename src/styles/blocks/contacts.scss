@@ -64,11 +64,11 @@
 
   grid-column: 1 / -1;
 
-  @include onTablet {
+  @include on-tablet {
     grid-column: 1 / -1;
   }
 
-  @include onDesctop {
+  @include on-desktop {
     grid-column: span 5;
   }
 }
@@ -76,11 +76,11 @@
 .info {
   grid-column: 1 / -1;
 
-  @include onTablet {
+  @include on-tablet {
     grid-column: 1 / -1;
   }
 
-  @include onDesctop {
+  @include on-desktop {
     grid-column: -7 / 13;
   }
 

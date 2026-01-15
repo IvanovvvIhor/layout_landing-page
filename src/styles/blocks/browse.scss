@@ -8,7 +8,7 @@
   &__button {
     grid-column: 1 / -1;
 
-    @include onDesctop {
+    @include on-desktop {
       grid-column: span 4;
     }
   }
@@ -38,22 +38,22 @@
   &__link-square {
     grid-column: span 1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 2;
     }
 
-    @include onDesctop {
+    @include on-desktop {
       grid-column: span 4;
     }
   }
   &__link-rectangle {
     grid-column: span 1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 4;
     }
 
-    @include onDesctop {
+    @include on-desktop {
       grid-column: span 8;
     }
   }
