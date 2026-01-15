@@ -1,0 +1,65 @@
+@use '../utils/variables';
+@use '../utils/mixins' as *;
+
+.about {
+  &__content {
+    margin-top: 48px;
+
+    @include onTablet {
+      margin-top: 56px;
+    }
+
+    @include onDesctop {
+      margin-top: 56px;
+    }
+
+    @include grid;
+  }
+
+  &__title {
+    grid-column: 1/ -1;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesctop {
+      grid-column: span 6;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    grid-column: 1/ -1;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesctop {
+      grid-column: span 6;
+    }
+  }
+
+  &__image {
+    grid-column: 1/ -1;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    background-image: url(../images/about__top.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
