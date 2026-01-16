@@ -20,7 +20,10 @@
   grid-column: 1 / -1;
   &__photo {
     width: 100%;
+    cursor: pointer;
+
     @include hover(transform, scale(1.05));
+
     &-first {
       background-image: url(../images/card1.png);
       background-size: cover;

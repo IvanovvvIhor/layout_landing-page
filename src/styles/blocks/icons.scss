@@ -72,6 +72,7 @@
   width: 125px;
   background-image: url(../images/Logo.png);
   background-size: cover;
+  cursor: pointer;
 
   @include hover(transform, scale(1.2));
 }

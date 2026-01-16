@@ -46,6 +46,8 @@
 
     vertical-align: center;
 
+    @include hover(transform, scale(1.05));
+
     &:hover {
       border: 1px solid $input__border-color;
     }
@@ -86,18 +88,22 @@
   }
 
   &__subtitle {
+    display: inline-block;
     font-family: 'Space Mono', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0;
     color: $subtitle-text-color;
-    transition: color 0.3s;
+    transition: all 0.3s;
     &:hover {
       color: $main-text-color;
+      transform: scale(1.05);
     }
+
     text-decoration: none;
   }
+
   &__title {
     color: $title-text-color;
     font-family: 'Space Mono', sans-serif;
@@ -107,4 +113,15 @@
     letter-spacing: 0;
     text-decoration: none;
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px $input-background-color inset;
+  -webkit-text-fill-color: $main-text-color;
+  transition: background-color 5000s ease-in-out 0s;
 }
