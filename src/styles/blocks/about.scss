@@ -62,5 +62,13 @@
     background-image: url(../images/about__top.png);
     background-size: cover;
     background-position: center;
+
+    @include on-tablet {
+      height: 400px;
+    }
+
+    @include on-desktop {
+      height: 460px;
+    }
   }
 }
